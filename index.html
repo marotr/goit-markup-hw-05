@@ -35,6 +35,10 @@
       <use href="./images/icons.svg#instagram"></use>
       <use href="./images/icons.svg#linkedin2"></use>
       <use href="./images/icons.svg#twitter"></use>
+      <use href="./images/sprite.svg#email-black"></use>
+      <use href="./images/sprite.svg#phone-black"></use>
+      <use href="./images/sprite.svg#person-black"></use>
+      <use href="./images/sprite.svg#close"></use>
     </svg>
     <header class="header">
       <div class="nav-menu container">
@@ -249,12 +253,8 @@
                 <ul class="social-media-team">
                   <li class="icon-circle">
                     <a class="icon-link" href="">
-                      <svg class="icon-social">
-                        <use
-                          href="./images/icons.svg#instagram"
-                          width="16"
-                          height="16"
-                        ></use>
+                      <svg class="icon-social" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -345,10 +345,10 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-                <div class="portfolio-descr">
-                  <h3 class="portfolio-list-header">Banking App</h3>
-                  <p class="portfolio-text">App</p>
-                </div>
+              </div>
+              <div class="portfolio-descr">
+                <h3 class="portfolio-list-header">Banking App</h3>
+                <p class="portfolio-text">App</p>
               </div>
             </li>
 
@@ -495,7 +495,112 @@
             </li>
           </ul>
         </div>
+        <form class="form-footer" action="">
+          <label class="label-footer"
+            >Subscribe
+            <input
+              class="input-footer"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="btn-footer" type="submit">
+            Subscribe<svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
+    <!--Modal-->
+    <div class="backdrop">
+      <div class="nav-menu container">
+        <nav class="navigation">
+          <a class="logo" href="./index.html"
+            >Web<span class="logo-grey">Studio</span></a
+          >
+          <ul class="menu-main">
+            <li><a class="menu current" href="./index.html">Studio</a></li>
+            <li><a class="menu" href="">Portfolio</a></li>
+            <li><a class="menu" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address-list">
+            <li>
+              <a class="address-details" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="address-details" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <section class="section main-first modal-section">
+        <div class="container div-one">
+          <h1 class="main-first-title darken">
+            Effective Solutions for Your Business
+          </h1>
+          <button class="button" name="submit_button" type="button">
+            Order Service
+          </button>
+        </div>
+      </section>
+      <div class="modal">
+        <form class="modal-form" action="">
+          <svg class="close" width="24" height="24">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+          <h3 class="modal-title">
+            Leave your contacts and we will call you back
+          </h3>
+          <label class="modal-label">
+            Name<input
+              class="input-modal"
+              type="text"
+              placeholder=""
+              autofocus
+            />
+          </label>
+          <label class="modal-label"
+            >Phone<input class="input-modal" type="phone" placeholder=""
+          /></label>
+          <label class="modal-label"
+            >Email<input class="input-modal" type="email" placeholder=""
+          /></label>
+          <label class="modal-label"
+            >Comment
+            <textarea
+              class="input-modal"
+              name=""
+              id=""
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <label class="terms"
+            ><input type="checkbox" required />I accept the terms and conditions
+            of the <span>Privacy Policy</span></label
+          >
+
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

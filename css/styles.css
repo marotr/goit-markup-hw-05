@@ -13,6 +13,9 @@ ul {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+input {
+  font-family: inherit;
+}
 h1,
 h2,
 h3,
@@ -53,7 +56,10 @@ main {
   width: 64px;
   height: 64px;
 }
-
+button {
+  font-family: inherit;
+  color: currentColor;
+}
 /*header*/
 .nav-menu {
   display: flex;
@@ -73,7 +79,6 @@ main {
 .menu-main {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .logo {
@@ -118,7 +123,6 @@ main {
   background-color: #404bbf;
   content: "";
   display: block;
-  transform: translateY(20px);
   content: "";
   position: absolute;
   left: 0;
@@ -166,6 +170,7 @@ main {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  margin: 0 auto;
 }
 .main-first-title {
   color: #fff;
@@ -202,7 +207,6 @@ main {
 }
 .button:focus {
   background: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*section2*/
@@ -332,8 +336,6 @@ main {
 }
 .icon-social {
   fill: #f4f4fd;
-  height: 16px;
-  width: 16px;
 }
 
 .social-media-team {
@@ -478,6 +480,7 @@ main {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  margin-right: 80px;
 }
 .logo-footer-n-text {
   margin-right: 120px;
@@ -512,4 +515,156 @@ main {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-footer {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+.label-footer {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  display: flex;
+  flex-direction: column;
+}
+.input-footer {
+  margin-top: 16px;
+}
+.input-footer::placeholder {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.48px;
+  padding-left: 16px;
+  text-align: start;
+}
+.input-footer:placeholder-shown {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: #2e2f42;
+}
+.btn-footer {
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 165px;
+  height: 40px;
+}
+.btn-footer:hover,
+.btn-footer:focus {
+  background: #404bbf;
+}
+
+/*Modal*/
+.backdrop {
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  position: relative;
+}
+
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 4px;
+  background: #fcfcfc;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.modal-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  width: 360px;
+}
+.close {
+  align-self: flex-end;
+}
+.modal-label {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+  display: flex;
+  flex-direction: column;
+}
+.input-modal {
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.modal-form textarea {
+  height: 120px;
+}
+.terms {
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.166;
+  letter-spacing: 0.48px;
+  margin-top: 8px;
+}
+.terms span {
+  color: #4d5ae5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+}
+.modal-btn {
+  display: block;
+
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  margin: 0 auto;
+  margin-top: 24px;
+  height: 56px;
+  min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: #404bbf;
 }
