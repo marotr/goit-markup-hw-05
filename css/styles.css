@@ -526,9 +526,10 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 .input-footer {
   margin-top: 16px;

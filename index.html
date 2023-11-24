@@ -495,31 +495,34 @@
             </li>
           </ul>
         </div>
-        <form class="form-footer" action="">
-          <label class="label-footer"
-            >Subscribe
-            <input
-              class="input-footer"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-          </label>
-          <button class="btn-footer" type="submit">
-            Subscribe<svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"
-                fill="white"
+        <div class="form-footer-container">
+          <p class="label-footer">Subscribe</p>
+          <form class="form-footer">
+            <label class="label">
+              <input
+                class="input-footer"
+                type="email"
+                name="email"
+                placeholder="E-mail"
               />
-            </svg>
-          </button>
-        </form>
+
+              <button class="btn-footer" type="submit">
+                Subscribe<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Modal-->
@@ -562,7 +565,7 @@
         </div>
       </section>
       <div class="modal">
-        <form class="modal-form" action="">
+        <form class="modal-form">
           <svg class="close" width="24" height="24">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -578,7 +581,7 @@
             />
           </label>
           <label class="modal-label"
-            >Phone<input class="input-modal" type="phone" placeholder=""
+            >Phone<input class="input-modal" type="tel" placeholder=""
           /></label>
           <label class="modal-label"
             >Email<input class="input-modal" type="email" placeholder=""
