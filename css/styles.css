@@ -726,7 +726,7 @@ button {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.04em;
 }
 .terms {
   color: var(--LIGHT-SLATE, #8e8f99);
