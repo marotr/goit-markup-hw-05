@@ -504,6 +504,7 @@
                 type="email"
                 name="email"
                 placeholder="E-mail"
+                id="email"
               />
 
               <button class="btn-footer" type="submit">
@@ -511,13 +512,12 @@
                   <use href="./images/icons.svg#icon_send"></use>
                 </svg>
               </button>
-             
             </label>
           </form>
         </div>
       </div>
     </footer>
-    <!--Modal-->
+    <!--Modal background-->
     <div class="backdrop">
       <div class="nav-menu container">
         <nav class="navigation">
@@ -556,19 +556,19 @@
           </button>
         </div>
       </section>
+      <!--Modal form -->
       <div class="modal">
-        <form class="modal-form">
-          <div class="close-btn">
-          <button type="button"  class=""></button>
-          <svg class="close" width="24" height="24">
-            <use href="./images/icons.svg#close-black1"></use>
-          </svg>
-          
-          </div>
+        <div class="modal-form">
+          <button type="button" class="close-btn">
+            <svg class="close" width="8" height="8">
+              <use href="./images/icons.svg#close-black1"></use>
+            </svg>
+          </button>
+
           <p class="modal-title">
             Leave your contacts and we will call you back
           </p>
-          <div class="modal-form-questions">
+          <form class="modal-form-questions">
             <label class="modal-label">
               Name<input
                 class="input-modal"
@@ -579,33 +579,35 @@
                 autofocus
               />
 
-            <svg class="modal-svg" width="18" height="24">
-              <use href="./images/icons.svg#person-black"></use>
-            </svg>
-          </div>
-          <label class="modal-label"
-            >Phone<input class="input-modal" type="tel" placeholder=""
-          /></label>
-          <label class="modal-label"
-            >Email<input class="input-modal" type="email" placeholder=""
-          /></label>
-          <label class="modal-label"
-            >Comment
-            <textarea
-              class="input-modal"
-              name=""
-              id=""
-              rows="10"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-          <label class="terms"
-            ><input type="checkbox" required />I accept the terms and conditions
-            of the <span>Privacy Policy</span></label
-          >
+              <svg class="modal-svg" width="18" height="24">
+                <use href="./images/icons.svg#person-black"></use>
+              </svg>
+            </label>
 
-          <button class="modal-btn" type="submit">Send</button>
-        </form>
+            <label class="modal-label"
+              >Phone<input class="input-modal" type="tel" placeholder=""
+            /></label>
+            <label class="modal-label"
+              >Email<input class="input-modal" type="email" placeholder=""
+            /></label>
+            <label class="modal-label"
+              >Comment
+              <textarea
+                class="input-modal"
+                name=""
+                id=""
+                rows="10"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+            <label class="terms"
+              ><input type="checkbox" required />I accept the terms and
+              conditions of the <span>Privacy Policy</span></label
+            >
+
+            <button class="modal-btn" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>
