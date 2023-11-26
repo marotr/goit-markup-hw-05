@@ -578,6 +578,10 @@ button {
   background: #404bbf;
 }
 
+.svg-footer {
+  margin-left: 16px;
+}
+
 /*Modal*/
 .backdrop {
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
@@ -599,6 +603,7 @@ button {
   justify-content: center;
   gap: 8px;
 }
+
 .modal-title {
   color: #2e2f42;
   text-align: center;
@@ -670,4 +675,28 @@ button {
 .modal-btn:hover,
 .modal-btn:focus {
   background: #404bbf;
+}
+.modal-form-questions {
+  position: relative;
+}
+.modal-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.close-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.close-btn:hover {
+  fill: #404bbf;
 }
