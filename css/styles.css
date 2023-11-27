@@ -751,6 +751,8 @@ button {
   line-height: 1.33;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
+  width: 16px;
+  height: 16px;
 }
 .modal-btn {
   display: block;
@@ -780,11 +782,8 @@ input[type="checkbox"] {
   stroke-width: 1px;
   stroke: rgba(46, 47, 66, 0.4);
 }
-input[type="checkbox"] + label {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-  stroke-width: 1px;
+
+input[type="checkbox"]:checked + label::before {
   fill: #404bbf;
   stroke-width: 1px;
   stroke: #404bbf;
