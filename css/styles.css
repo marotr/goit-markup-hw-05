@@ -642,12 +642,6 @@ button {
   padding: 0;
 }
 
-.close-btn:hover,
-.close-btn:focus {
-  background-color: #404bbf;
-  border: none;
-}
-
 .close {
   fill: #2e2f42;
   position: absolute;
@@ -660,6 +654,11 @@ button {
 .close:hover,
 .close:focus {
   fill: #ffffff;
+}
+.close-btn:hover,
+.close-btn:focus {
+  background-color: #404bbf;
+  border: none;
 }
 
 .modal-title {
