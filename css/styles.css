@@ -651,8 +651,8 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn .close:hover,
-.close-btn .close:focus {
+.close-btn:hover .close,
+.close-btn:focus .close {
   fill: #ffffff;
 }
 .close-btn:hover,
