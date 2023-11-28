@@ -642,7 +642,7 @@ button {
   padding: 0;
 }
 
-.close {
+.close-btn .close {
   fill: #2e2f42;
   position: absolute;
   top: 50%;
@@ -757,7 +757,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-.terms a {
+.link-privacy {
   color: #4d5ae5;
 }
 .modal-btn {
