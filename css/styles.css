@@ -735,6 +735,7 @@ button {
   outline: transparent;
   padding: 8px 16px;
   resize: none;
+  margin-bottom: 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea:focus,
@@ -796,7 +797,7 @@ button {
   margin-right: 8px;
 }
 
-input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked + .checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
