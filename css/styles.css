@@ -587,6 +587,7 @@ button {
 
 /*Modal*/
 .backdrop {
+  display: none;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -598,6 +599,7 @@ button {
 }
 
 .modal {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -618,7 +620,12 @@ button {
   gap: 8px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal.is-open {
+  display: block;
+}
+.backdrop.is-open {
+  display: block;
+}
 .close-btn {
   position: absolute;
   display: flex;
